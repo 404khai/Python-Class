@@ -12,9 +12,32 @@
 # sum = add(45, 458)
 # print(f'sum' = sum)
 
-def userAge(age):
-    if age < 18:
-        return 'You are not eligible'
-    return 'Congratulations'
+# def userAge(age):
+#     if age < 18:
+#         return 'You are not eligible'
+#     return 'Congratulations'
 
-print(userAge(90))
+# print(userAge(90))
+
+def studentScore(score):
+    grade = " "
+    if score >= 70 and score <=100:
+        grade = "A"
+    elif score <= 60:
+        grade = "B"
+    elif score <= 50:
+        grade = "C"
+    else:
+        grade = "F"
+    return grade
+
+stdGrade = studentScore(100)
+
+prefix = ""
+if stdGrade == "A":
+    prefix = "an"
+
+print("You scored" + " " + prefix + " " + stdGrade)
+
+
+# Question: A town has a unique traffic rule based on your speed and weather. It is your birthday the fine varies
