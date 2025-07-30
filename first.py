@@ -41,17 +41,39 @@
 
 
 # Question: A town has a unique traffic rule based on your speed and weather. It is your birthday the fine varies
-def speedProgram(speed, isBirthday):
-    if speed <= 60:
-        print("No fine")
-    elif isBirthday == False and (speed > 60 or speed <= 80):
-        print("Small fine") 
-    elif isBirthday == True and (speed > 60 or speed <= 80):
-        print("No fine") 
-    elif isBirthday == False and (speed > 80):
-        print("Big fine")
-    elif isBirthday == True and (speed > 80):
-        print("Small fine")
+# def speedProgram(speed, isBirthday):
+#     if speed <= 60:
+#         print("No fine")
+#     elif isBirthday == False and (speed > 60 or speed <= 80):
+#         print("Small fine") 
+#     elif isBirthday == True and (speed > 60 or speed <= 80):
+#         print("No fine") 
+#     elif isBirthday == False and (speed > 80):
+#         print("Big fine")
+#     elif isBirthday == True and (speed > 80):
+#         print("Small fine")
 
     
-print(speedProgram(71, True))
+# print(speedProgram(71, True))
+
+# def determine_fine(speed: int, is_birthday: bool) -> str:
+#     if speed <= 60:
+#         return "No fine"
+#     elif 61 <= speed <= 80:
+#         return "No fine" if is_birthday else "Small fine"
+#     else:  # speed > 80
+#         return "Small fine" if is_birthday else "Big fine"
+
+# print(determine_fine(55, False))  
+# print(determine_fine(75, True))   
+# print(determine_fine(75, False))  
+# print(determine_fine(85, True))   
+# print(determine_fine(85, False))  
+
+# x = 12
+
+# c = complex(x)
+# print(c)
+
+a = "Danielle"
+print(a.lower()) 
