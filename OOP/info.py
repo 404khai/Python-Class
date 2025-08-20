@@ -17,6 +17,7 @@ class Person():
         return f"Name: {self.firstName} {self.lastName}" 
     
 p1 = Person("Daniels", "Fega")
-p1.lastName = "Prince"
+p2 = Person("Sam", "Wilson")
+#p1.lastName = "Prince"
 #print(p1)
 print(p1.user_details())
