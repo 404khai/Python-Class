@@ -8,3 +8,6 @@ class Developer(Employee):
     def showEmployeeDetails(self):
         super().showEmployeeDetails()
         print(f"Language: {self.language}")
+
+    def calculateBonus(self):
+        return self.salary*0.80

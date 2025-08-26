@@ -6,3 +6,6 @@ class Employee:
     def showEmployeeDetails(self):
         print(f"Name: {self.name}")
         print(f"Salary: {self.salary}")
+
+    def calculateBonus(self):
+        return self.salary*0.05

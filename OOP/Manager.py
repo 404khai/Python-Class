@@ -9,4 +9,5 @@ class Manager(Employee):
         super().showEmployeeDetails()
         print(f"Department: {self.department}")
 
-    
+    def calculateBonus(self):
+        return self.salary*0.10
