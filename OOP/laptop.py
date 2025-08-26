@@ -19,5 +19,5 @@ laptop5 = Laptops("Dell", "Inspiron", "Black", 2025, "SN-931")
 laptopList = [laptop1, laptop2, laptop3, laptop4, laptop5]
 
 for lap in laptopList:
-    print(lap)
+    print(f"Laptop deets \n {lap} ")
 
