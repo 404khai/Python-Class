@@ -35,8 +35,21 @@ import numpy as np
 # print(arr)
 # print(newArr.dtype)
 
-arr = np.array([[1,2,3], [4,5,6], [30,40,50]])
-print(arr.shape)
-print(arr.size)
+#arr = np.array([[1,2,3], [4,5,6], [30,40,50]])
+# print(arr.shape)
+# print(arr.size)
 
-print(arr)
+# print(arr[0,0]) #row 0, column 0
+
+# print(np.random.rand(10,10))
+
+sales = np.array([
+    [30, 50, 70], #day 1
+    [10, 20, 30],
+    [60, 50, 10],
+])
+
+#print("Sales Data: ", sales)
+#print("Total per product: ", sales.sum(axis=0))
+
+print("Average eggs sold: ", sales[::,2].mean())
