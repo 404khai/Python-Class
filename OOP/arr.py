@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 #arr = np.array([1,2,3,4,5])
 
@@ -43,13 +44,22 @@ import numpy as np
 
 # print(np.random.rand(10,10))
 
-sales = np.array([
-    [30, 50, 70], #day 1
-    [10, 20, 30],
-    [60, 50, 10],
-])
+# sales = np.array([
+#     [30, 50, 70], #day 1
+#     [10, 20, 30],
+#     [60, 50, 10],
+# ])
 
 #print("Sales Data: ", sales)
 #print("Total per product: ", sales.sum(axis=0))
 
-print("Average eggs sold: ", sales[::,2].mean())
+#print("Average eggs sold: ", sales[::,2].mean())
+
+days = [1,2,3,4,5]
+sales = [10,20,30,40,50]
+
+plt.plot(days, sales, marker='o')
+plt.title("Sales over 5 days")
+plt.xlabel("Days")
+plt.ylabel("Unit sold")
+plt.show()
