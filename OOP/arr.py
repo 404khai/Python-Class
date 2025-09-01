@@ -55,11 +55,21 @@ import matplotlib.pyplot as plt
 
 #print("Average eggs sold: ", sales[::,2].mean())
 
-days = [1,2,3,4,5]
-sales = [10,20,30,40,50]
+# days = [1,2,3,4,5]
+# sales = [10,20,30,40,50]
 
-plt.plot(days, sales, marker='o')
+# plt.plot(days, sales, marker='o')
+# plt.title("Sales over 5 days")
+# plt.xlabel("Days")
+# plt.ylabel("Unit sold")
+# plt.show()
+
+products = ["Bread", "Milk", "Beef"]
+unitSold = [300,230,430]
+
+plt.bar(products, unitSold, color=['blue', 'green', 'pink'])
+
 plt.title("Sales over 5 days")
-plt.xlabel("Days")
-plt.ylabel("Unit sold")
+plt.xlabel("Unit sold per produt")
+plt.ylabel("Units")
 plt.show()
