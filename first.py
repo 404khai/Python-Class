@@ -77,3 +77,11 @@
 
 a = "Danielle"
 print(a.lower()) 
+
+intro = "Hello, my name is {} and I am {} years old."
+print(intro.format('John', 15))
+intro2 = "Hello my name is"
+name = 'john'
+age = 15
+
+print(intro2+" " + name + " " + "and I am" + " " + str(age) + " " + "years old.")
