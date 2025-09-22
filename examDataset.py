@@ -10,3 +10,11 @@ examData={
 df = pd.DataFrame(examData)
 
 print(df)
+
+print("****************")
+print("Basic Info")
+print(df.info())
+
+print("****************")
+print("Statistics")
+print(df.describe())
