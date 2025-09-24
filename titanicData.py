@@ -1,9 +1,14 @@
 import pandas as pd
 
-data = pd.read_csv("titanic.csv");
+df = pd.read_csv("titanic.csv");
 
 # See last 5 rows
-print(data.head())
+# print(df.head(3))
 
 # See last 5 rows
-print(data.tail())
+# print(df.tail())
+
+# print(df.isnull().sum())
+
+# df["Age"].fillna(df["Age"].median(), inplace=True)
+# print(df.describe)
