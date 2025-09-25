@@ -1,6 +1,20 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-df = pd.read_csv("titanic.csv");
+df = pd.read_csv("titanic.csv")
+
+# print("Shape of dataset: ", df.shape)
+
+# print("\n First five rows \n",df.head())
+# print("\n Dataset Info. \n")
+# print(df.info())
+# print("\n Summary Statistics (numeric columns)\n", df.describe())
+
+#get missing values
+print("\n Missing values\n", df.isnull.sum())
+
+
 
 # See last 5 rows
 # print(df.head(3))
