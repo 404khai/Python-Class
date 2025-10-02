@@ -22,5 +22,6 @@ yPred = model.predict(y)
 
 print("Intercept: ", model.intercept_)
 print("Slope: ", model.coef_)
-print("MSE: ", mean_squared_error(y, yPred))
-print("Mean Absolute Error: ", mean_absolute_error(y, yPred))
+print("Mean Squared Error(MSE): ", mean_squared_error(y, yPred))
+print("Mean Absolute Error(MAE): ", mean_absolute_error(y, yPred))
+print("R^2 Score: ", r2_score(y, yPred))
