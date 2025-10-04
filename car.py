@@ -37,10 +37,7 @@ def extract_numeric(value):
     except:
         return np.nan
 
-# print(df['max_power'].tail())
-# print(df['max_power'].dtype)
-
-#data types changed from objects to numeric
+#data types changed from objects to numeric float
 cols_to_clean = ['mileage(km/ltr/kg)', 'engine', 'max_power']
 
 for col in cols_to_clean:
@@ -57,8 +54,8 @@ df = df.fillna({
     'seats': df['seats'].median()
 })
 
-print(df.dtypes)
-print(df.isnull().sum())
+# print(df.dtypes)
+# print(df.isnull().sum())
 
 
 plt.figure(figsize=(8,5))
@@ -141,3 +138,6 @@ print(results_df)
 sns.barplot(x=results_df.index, y=results_df['R2'])
 plt.title("Model R² Comparison")
 plt.show()
+
+
+print(df.dtypes)
