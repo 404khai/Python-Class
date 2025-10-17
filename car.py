@@ -64,7 +64,7 @@ plt.title("Distribution of Selling Price")
 plt.show()
 
 plt.figure(figsize=(8,5))
-sns.scatterplot(x='km_driven', y='selling_price', data=df)
+sns.scatterplot(x='owner', y='selling_price', data=df)
 plt.title("Selling Price vs KM Driven")
 plt.show()
 
@@ -140,4 +140,3 @@ plt.title("Model R² Comparison")
 plt.show()
 
 
-print(df.dtypes)
